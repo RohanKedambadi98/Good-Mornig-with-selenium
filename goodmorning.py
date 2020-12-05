@@ -35,8 +35,8 @@ class morning():
         driver.get(InstaUrl)
         driver.implicitly_wait(3)
 
-        driver.find_element(By.NAME, "username").send_keys("the_realbot2020")
-        driver.find_element(By.NAME, "password").send_keys("@lo@lo123")
+        driver.find_element(By.NAME, "username").send_keys("username")
+        driver.find_element(By.NAME, "password").send_keys("password")
         # driver.find_element(By.XPATH, "//button[text()='Show']").click()
         driver.find_element(By.XPATH, "//button[@type='submit']").click()
         time.sleep(3)
@@ -58,16 +58,16 @@ class morning():
         driver.get(FbUrl)
         driver.implicitly_wait(3)
 
-        driver.find_element(By.ID,"email").send_keys("Admin Noobplay")
-        driver.find_element(By.ID,"pass").send_keys("@lo@lo123")
+        driver.find_element(By.ID,"email").send_keys("username")
+        driver.find_element(By.ID,"pass").send_keys("password")
         driver.find_element(By.XPATH, "//button[@type='submit']").click()
 
         if driver.current_url=="https://www.facebook.com/":
             pass
         else:
             driver.refresh()
-            driver.find_element(By.XPATH, "//input[@id='email']").send_keys("Admin Noobplay")
-            driver.find_element(By.XPATH, "//input[@id='pass']").send_keys("@lo@lo123")
+            driver.find_element(By.XPATH, "//input[@id='email']").send_keys("username")
+            driver.find_element(By.XPATH, "//input[@id='pass']").send_keys("password")
             driver.find_element(By.XPATH, "//button[@type='submit']").click()
 
 
@@ -98,9 +98,6 @@ class morning():
 
 
 
-        #for chrome to keep it opened
-        # while(True):
-        #     pass
 
 
 
